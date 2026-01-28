@@ -28,7 +28,7 @@ jobs:
 
       - name: Build React app
         working-directory: frontend
-        run: npm run build
+        run: npm run build #create dist folder that will remplace the dist folder on s3
 
       - name: Upload to S3
         run: aws s3 sync frontend/build s3://${{ secrets.S3_BUCKET_NAME }} --delete

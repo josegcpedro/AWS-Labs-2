@@ -42,6 +42,10 @@ My S3 bucket is secured. Anyone who is not logged into my AWS account cannot acc
 I use GitHub Actions so I can automatically update the project just by pushing changes to my GitHub repository.
 Automation is a really important thing, because it reduces errors.
 
+The order of the steps that deploy.yml is very important.
+The 'Build React app' step creates a build folder with the production files, and the 'Upload to S3' step syncs the contents of this folder to the S3 bucket, replacing the existing files.
+
+
 ## Scalability
 
 (Not done yet)
