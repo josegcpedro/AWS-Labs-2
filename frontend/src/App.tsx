@@ -19,7 +19,7 @@ function App() {
   return (
     <div>
       <h1>
-        New version 2.0
+        New version 3.0
       </h1>
       <button onClick={getData}>Voir URL et fetch</button>
       <h1>
